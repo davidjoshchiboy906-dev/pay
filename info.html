@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/bootstrap.min.css">
+  <link rel="stylesheet" href="/all.min.css">
+  
+  <style>
+      *{
+          margin: 0;
+          padding: 0; 
+      }
+      .logo{
+          margin: 10% 20%;
+          border-radius: 50%;
+      }
+      .card{
+          box-shadow: 32px 32px 32px blue;
+      }
+      h1{
+          font-size: 2rem;
+  		font-weight: 900;
+      }
+      input::placeholder{
+          color: green ! important;
+      }
+
+  </style>
+</head>
+<body class="bg-dark m-0 p-0">
+  <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 bg-secondary">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-dark fs-1" href="/info">INFO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto fs-3 fw-bolder">
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="/index">Home</a>
+        </li>
+        <li class="nav-iem">
+          <a class="nav-link text-white" href="/about">AboutUs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<img src="logo.png" class="logo mt-5 pt-2" width="60%">
+
+<div class="card bg-primary rounded-4 mx-4 p-3 d-flex flex-column align-items-center">
+    <h1 class="text-success text-center">Please register your details👇👇👇</h1>
+    
+    <form action="/info" method="POST">
+        <input name="name" type="text" placeholder="Full Name (Surname first)" class="form-control bg-dark border-0 mt-3 text-success py-2">
+    	<input name="pass" type="number" placeholder="Reg No." class="form-control bg-dark border-0 mt-3 text-success py-2">
+    	<input name="state" type="text" placeholder="State of Origin" class="form-control bg-dark border-0 mt-3 text-success py-2">
+    	<input name="address" type="text" placeholder="Address" class="form-control bg-dark border-0 mt-3 text-success py-2">
+    	<button type="submit" class="btn btn-success mt-2">SUBMIT</button>
+    </form>
+</div>
+  
+  <script src="/bootstrap.bundle.min.js"></script>
+</body>
+</html>

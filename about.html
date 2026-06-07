@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"it
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Home Page</title>
@@ -12,21 +12,16 @@
           margin: 0;
           padding: 0; 
       }
-      .h1 {
-  		font-size: 3rem;
-  		font-weight: 700;
-	  } 
       .title{
           font-size: 2.3rem;
   		font-weight: 900;
       }
-      .logo{
-          border-radius: 50%;
-      }
       .sub-tit{
-          font-size: 1.3em;
+          font-size: 1.1em;
   		font-weight: 600;
-          
+      }
+      .first{
+          margin: 10% 25%;
       }
 
   </style>
@@ -34,43 +29,45 @@
 <body class="bg-primary m-0 p-0">
   <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 bg-secondary">
   <div class="container">
-    <a class="navbar-brand fw-bold text-dark fs-1" href="/">HOME</a>
+    <a class="navbar-brand fw-bold text-dark fs-1" href="/about">AboutUs</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto fs-3 fw-bolder">
         <li class="nav-item">
-          <a class="nav-link active text-white" href="/about">AboutUs</a>
+          <a class="nav-link active text-white" href="/index">Home</a>
         </li>
         <li class="nav-iem">
           <a class="nav-link text-white" href="/info">Personal & General Info</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="/contact">Contact</a>
+          <a class="nav-link text-white" href="/vcontact">Contact</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="bg-dark pt-5 mt-5 ps-4">
-    <i class="fa-solid fa-users fa-5x text-white"></i>
-    <p class="text-primary fs-4 m-0 p-0">Welcome to</p>
-    <h1 class="text-primary h1">Dominion University</h1> 
-</div>
-
 <div class="row mt-5 mb-5 align-items-center px-2">
-    <div class="col-7 ps-4 mt-3">
-        <div class="row text-light title">Dominion University</div>
+    <div class="col-6 ps-4 mt-3">
+        <div class="row text-danger title">Dominion University</div>
         <div class="row sub-tit text-dark">Transforming the society through education</div>
     </div>
-    <img src="logo.png" class="logo mt-3 col-5">
+    <img src="teach.png" height="120" class="mt-3 col-6">
 </div>
 
-<div class="card bg-white mx-3 mt-5 p-3 mb-5 rounded-4">
-    <p class="text-dark text-center fs-3 fw-bold">Please ensure you have registered your details in the school database</p>
-    <button class="btn btn-primary fw-bold fs-4">Register here <i class="fa-solid fa-arrow-right"></i> </button>
+<img src="build.png" width="80%" class="mx-2">
+
+<div class="card bg-light rounded-4 mx-4 mt-5 p-3 text-center mb-5">
+    <h1 class="text-dark fw-bold">Why Dominion University??</h2>
+    <p class="text-primary fs-4">Lorem ipsum And the spirits of the heavenly luminaries shall stand ready in the presence of the Lord of Spirits to execute judgement upon punishment upon those who have forsaken the holy commandments of God.</h1>
+</div>
+
+<img src="build.png" width="50%" class="first">
+<div class="row mt-2 mx-3 mb-5">
+    <img src=social.png" class="col-6 px-2">
+    <img src="two.png" class="col-6 px-2">
 </div>
   
   <script src="/bootstrap.bundle.min.js"></script>
